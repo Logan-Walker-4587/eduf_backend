@@ -52,7 +52,7 @@ def generate_ai_insights(questions: List[QuestionSubmission], previous_results: 
     historical_context = ""
     if previous_results:
         avg_score = sum(r.score for r in previous_results) / len(previous_results)
-        historical_context = f"\\nHistorical context: Your average score is {avg_score:.1f}%. "
+        historical_context = f"\nHistorical context: Your average score is {avg_score:.1f}%. "
         if score > avg_score:
             historical_context += "You performed above your usual average!"
         else:
