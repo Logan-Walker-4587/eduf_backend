@@ -1,0 +1,20 @@
+[project]
+name = "backend"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi[standard]>=0.115.8",
+    "huggingface-hub[inference]>=0.29.1",
+    "llama-index>=0.12.19",
+    "llama-index-embeddings-cohere>=0.4.0",
+    "llama-index-embeddings-huggingface>=0.5.1",
+    "llama-index-embeddings-huggingface-api>=0.3.0",
+    "llama-index-llms-cohere>=0.4.0",
+    "llama-index-llms-huggingface-api>=0.3.1",
+    "pydantic-settings>=2.7.1",
+    "pyjwt[crypto]>=2.10.1",
+    "python-dotenv>=1.0.1",
+    "sqlalchemy>=2.0.38",
+]
